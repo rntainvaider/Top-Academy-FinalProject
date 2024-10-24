@@ -11,16 +11,38 @@ body {
     background-color: gray;
 }
 
+.header {
+}
+
 .container {
-    max-width: 1380px;
-    padding: 0 120px;
+    max-width: 1140px;
     margin: 0 auto;
+}
+
+.header__content {
+}
+
+.header__nav {
+}
+
+.header__list {
+
+}
+
+.header__icons {
+
 }
 
 .list-reset {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.header__link {
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
 }
 
 .btn-reset {
@@ -33,4 +55,16 @@ body {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.footer__content {
+}
+.footer__nav {
+}
+.footer__list {
+
+}
+.list-reset {
+}
+.footer__item {
 }
