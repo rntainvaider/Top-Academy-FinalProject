@@ -1,27 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js" defer></script>
 </head>
-
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__content">
+            <div class="header__hed">
+                <div class="header__logo">
+                    <a class="header__link-logo" href="#">
+                        <img src="assets/img/header/logo.svg" alt="logo">
+                    </a>
+                    <p class="header__text-logo">Личный кабинет потребителя</p>
+                </div>
                 <nav class="header__nav">
-                    <ul class="header__list">
-
+                    <ul class="header__nav-list">
+                        <li class="header__nav-items">
+                            <a class="header__nav-link" href="#">
+                                <img class="header__help" src="assets/img/header/help.svg" alt="help">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="header__nav-link" href="#">
+                                <img class="header__notification" src="assets/img/header/notification.svg" alt="notification">
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-</body>
+    <main class="main">
+        <div class="container">
+            <div class="regisration">
+                <div class="registration__top">
+                    <h2 class="registration__title">
+                        Регистрация
+                    </h2>
+                    <div class="registration__top-botom">
+                        <p class="registration__top-botom-text">Уже есть учётная запись?</p>
+                        <a class="registration__top-botom-text registration__top-botom__btn" href="#">Войти</a>
+                    </div>
+                </div>
+                <form action="/register" method="POST" class="registration__form">
+                    <div class="registration__form-group">
+                        <label class="form-group__label" for="full_name">
+                            ФИО
+                        </label>
+                        <input class="from-group__input" type="text" id="full_name" name="full_name" placeholder="Введите ФИО">
+                    </div>
+                    <div class="registration__form-group">
+                        <label class="form-group__label" for="email">
+                            E-mail
+                        </label>
+                        <input class="from-group__input" type="email" id="email" name="email" placeholder="Введите E-mail">
+                    </div>
+                    <div class="registration__form-group">
+                        <label class="form-group__label" for="phone">
+                            Телефон
+                        </label>
+                        <input class="from-group__input" type="text" id="phone" name="phone" placeholder="Введите телефон">
+                    </div>
+                    <div class="registration__form-checkbox">
+                        <input class="form-checkbox__input" type="checkbox" id="checkbox" name="checkbox">
+                        <label class="form-checkbox__label" for="checkbox">
+                            Даю
+                            <a class="form-checkbox__link" href="#">
+                                согласие на обработку моих персональных данных.
+                            </a>
+                        </label>
+                    </div>
 
+
+
+                    <div class="horizontal-stepper">
+                        <div class="circle-one">
+                            1
+                        </div>
+                        <div class="line">
+
+                        </div>
+                        <div class="circle-two">
+                            2
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="registration__form-button">
+                        <input class="form-button__btn" type="button" value="Дальше >">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__foot">
+                <div class="footer__items">
+                    <div class="footer__items-left">
+                        <img src="assets/img/header/logo.svg" alt="logo" class="footer__items-left-img-logo">
+                        <p class="footer__items-left-text">©ООО “ДТС”, 2023</p>
+                    </div>
+                    <div class="footer__items-right">
+                        <p class="footer__items-right-title">
+                            Офис обслуживания
+                        </p>
+                        <p class="footer__items-right-text">
+                            г. Батайск, ул. Козлова, д. 32<br>
+                            Тел: +7 (86352) 24-25-2<br>
+                            Пн- Пт: 17:00 - 22:00<br>
+                            Сб-Вс: выходной<br>
+                            mail@mail.ru
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
