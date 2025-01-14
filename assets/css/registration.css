@@ -33,7 +33,7 @@ body {
 /* header */
 
 .header {
-    margin-bottom: 32px;
+    /* margin-bottom: 32px; */
 }
 
 .header__main {
@@ -67,6 +67,11 @@ body {
 
 /* main */
 
+.main {
+    /* margin-bottom: 79px; */
+    margin: 32px 0 79px 0;
+}
+
 .regisration {
     width: 394px;
     height: 641px;
@@ -81,6 +86,7 @@ body {
 }
 
 .registration__title {
+    font-family: var(--font-family);
     font-weight: 700;
     font-size: 34px;
     line-height: 130%;
@@ -182,13 +188,6 @@ body {
     color: var(--blue-blue-9);
 }
 
-
-
-
-
-
-
-
 .registration__form--horizontal-stepper {
     width: 332px;
     height: 34px;
@@ -230,16 +229,6 @@ body {
     justify-content: center;
 }
 
-
-
-
-
-
-
-
-
-
-
 .form-button__btn {
     border-radius: 4px;
     padding: 10px 18px 10px 22px;
@@ -253,13 +242,9 @@ body {
     color: var(--white);
 }
 
-.main {
-    margin-bottom: 79px;
-}
-
 /* footer */
 
-.footer__foot {
+.footer__main {
     border-top: 1px solid var(--gray-gray-2);
     padding: 32px;
     height: 178px;
@@ -286,6 +271,7 @@ body {
 }
 
 .footer__items-left-text {
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
     line-height: 155%;
@@ -298,6 +284,7 @@ body {
 }
 
 .footer__items-right-title {
+    font-family: var(--font-family);
     font-weight: 700;
     font-size: 14px;
     line-height: 155%;
